@@ -1,0 +1,16 @@
+.footer-menu{
+    @apply grid lg:grid-cols-4 lg:grid-rows-none sm:grid-cols-2 gap-y-10
+}
+
+.footer-menu div{
+    @apply flex flex-col
+}
+
+.footer-menu h5{
+    @apply text-[#5865f2] mb-5;
+    
+}
+
+.footer-menu a{
+    @apply text-white mt-2 hover:underline
+}
