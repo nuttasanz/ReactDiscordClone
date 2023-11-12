@@ -1,55 +1,37 @@
+import DetailComponents from "./components/DetailComponents";
+import IntroduceComponent from "./components/IntroduceComponents";
+
 const HomePage = () => {
   return (
     <>
-      <div className="relative h-[780px] md:h-[626px]">
-        <div className="absolute w-full h-full">
-          <img
-            src="/images/ComponentImages/HomePage/Banner.png"
-            className="w-full h-full object-cover"
-          />
-            <img
-              src="/images/ComponentImages/HomePage/LeftBanner.png"
-              className="absolute bottom-0 left-0 md:left-[-200px] sm:block md:hidden lg:block"
-            />
-            <img
-              src="/images/ComponentImages/HomePage/RightBanner.png"
-              className="absolute bottom-0 right-[-150px] hidden md:block lg:block"
-            />
-        </div>
-        <div className="relative w-full max-w-[1260px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[120px] mx-auto">
-          <div className="w-full max-w-[780px] mx-auto text-left lg:text-center text-white">
-            <h1 className="text-[24px] md:text-[54px] font-extrabold ">
-              โลกที่เป็นดั่งใจนึก...
-            </h1>
-            <p className="text-[20px] mt-10">
-              ...ที่ที่คุณเป็นได้ทั้งสมาชิกชมรมของโรงเรียน กลุ่มเกม
-              หรือชุมชนศิลปะระดับโลก ที่ที่คุณและกลุ่มเพื่อนได้มาใช้เวลาร่วมกัน
-              ที่ที่ช่วยอำนวยความสะดวกให้คุณได้พูดคุยกันทุกวันและสังสรรค์กันได้บ่อยยิ่งขึ้น
-            </p>
-          </div>
-          <div className="w-full flex flex-col lg:flex-row justify-center gap-6 mt-6">
-            <button className="w-fit bg-white rounded-full text-black text-[16px] md:text-[24px] font-medium py-4 px-8">
-              <div className="flex items-center justify-center gap-2">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="icon-2tQ9Jt"
-                >
-                  <g fill="currentColor">
-                    <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
-                    <path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
-                  </g>
-                </svg>
-                <span>ดาวน์โหลดสำหรับ Windows</span>
-              </div>
-            </button>
-            <button className="w-fit bg-[#23272A] text-white rounded-full text-[16px] md:text-[24px] font-medium py-4 px-8">
-              <span>เปิด Discord ในเบราว์เซอร์ของคุณ</span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <IntroduceComponent />
+      <DetailComponents
+        title={"สร้างโลกที่เป็นของคุณและเปิดรับผู้ที่ได้คำเชิญเท่านั้น"}
+        desc={
+          "เซิร์ฟเวอร์ Discord ได้จัดเรียงช่องตามหัวข้อต่าง ๆ ซึ่งคุณสามารถทำงานร่วมกัน แชร์และพูดคุยเรื่องราวในแต่ละวันของคุณได้โดยไม่ต้องสร้างแชทกลุ่มให้วุ่นวาย"
+        }
+        imgUrl={"/images/ComponentImages/HomePage/DetailImage1.png"}
+        reverse={false}
+        bgColor={"bg-[#fff]"}
+      />
+      <DetailComponents
+        title={"พื้นที่เพื่อการสังสรรค์อย่างง่ายดาย"}
+        desc={
+          "ว่างเมื่อไรก็หาที่นั่งแล้วใช้งานช่องสำหรับพูด เพื่อนในเซิร์ฟเวอร์ของคุณสามารถรู้ได้ว่าคุณกำลังออนไลน์และเข้ามาพูดคุยได้ทันทีโดยไม่ต้องโทรหา"
+        }
+        imgUrl={"/images/ComponentImages/HomePage/DetailImage2.png"}
+        reverse={true}
+        bgColor={"bg-[#F6F6F6]"}
+      />
+      <DetailComponents
+        title={"รวบรวมคนให้เป็นกลุ่มแฟนคลับ"}
+        desc={
+          "สร้างชุมชนได้โดยใช้เครื่องมือการคัดกรองและการกำหนดสิทธิ์การเข้าถึงของสมาชิกตามความต้องการ มอบพลังวิเศษให้สมาชิก ตั้งค่าช่องส่วนตัว และอื่นๆ อีกมากมาย"
+        }
+        imgUrl={"/images/ComponentImages/HomePage/DetailImage3.png"}
+        reverse={false}
+        bgColor={"bg-[#fff]"}
+      />
     </>
   );
 };
