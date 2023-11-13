@@ -8,7 +8,7 @@ const Footer = () => {
       {/* DESKTOP RESPONSIVE */}
       <div className="w-full relative bottom-0 bg-[#23272A] pt-[80px] pb-[64px] px-6 md:px-10">
         <nav className="max-w-[1260px] mx-auto flex flex-col md:flex-row  justify-between">
-          <div className="flex flex-col sm:mb-9 md:mb-0">
+          <div className="flex flex-col mb-[56px] md:mb-0">
             <button className="my-6 flex items-center gap-2">
               <img
                 src="/images/CountryImages/thTh.png"

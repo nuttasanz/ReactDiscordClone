@@ -1,4 +1,5 @@
 import DetailComponents from "./components/DetailComponents";
+import FooterDetailComponents from "./components/FooterDetailComponents";
 import IntroduceComponent from "./components/IntroduceComponents";
 
 const HomePage = () => {
@@ -32,6 +33,7 @@ const HomePage = () => {
         reverse={false}
         bgColor={"bg-[#fff]"}
       />
+      <FooterDetailComponents/>
     </>
   );
 };

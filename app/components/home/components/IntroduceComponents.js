@@ -1,3 +1,5 @@
+import '../styles/homePage.css'
+
 const IntroduceComponent = () => {
   return (
     <div className="relative h-[780px] md:h-[626px]">
@@ -17,10 +19,10 @@ const IntroduceComponent = () => {
       </div>
       <div className="relative w-full max-w-[1260px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[120px] mx-auto">
         <div className="w-full max-w-[780px] mx-auto text-left lg:text-center text-white">
-          <h1 className="text-[24px] md:text-[54px] font-extrabold ">
+          <h1 className="font-extrabold ">
             โลกที่เป็นดั่งใจนึก...
           </h1>
-          <p className="text-[20px] mt-10">
+          <p className="textMedium mt-[40px]">
             ...ที่ที่คุณเป็นได้ทั้งสมาชิกชมรมของโรงเรียน กลุ่มเกม
             หรือชุมชนศิลปะระดับโลก ที่ที่คุณและกลุ่มเพื่อนได้มาใช้เวลาร่วมกัน
             ที่ที่ช่วยอำนวยความสะดวกให้คุณได้พูดคุยกันทุกวันและสังสรรค์กันได้บ่อยยิ่งขึ้น

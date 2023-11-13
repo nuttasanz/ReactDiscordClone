@@ -1,3 +1,5 @@
+import '../styles/homePage.css'
+
 const DetailComponents = (props) => {
   const { imgUrl, title, desc, reverse, bgColor } = props;
   return (
@@ -12,16 +14,15 @@ const DetailComponents = (props) => {
         >
           <div className="w-full h-full max-w-[678px] max-h-[440px]">
             <img
-              //   src="/images/ComponentImages/HomePage/DetailImage1.png"
               src={imgUrl}
               className="w-full h-full"
             />
           </div>
-          <div className="w-full md:max-w-[380px]">
-            <h1 className="text-[30px] md:text-[48px] font-extrabold">
+          <div className="w-full md:max-w-[380px] mt-5">
+            <h2 className="font-extrabold">
               {title}
-            </h1>
-            <p className="text-[16px] md:text-[20px] mt-6">{desc}</p>
+            </h2>
+            <p className="textMedium mt-6">{desc}</p>
           </div>
         </div>
       </div>
