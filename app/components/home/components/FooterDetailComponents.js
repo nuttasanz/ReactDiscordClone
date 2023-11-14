@@ -31,7 +31,7 @@ const FooterDetailComponents = () => {
             </h4>
             <a
               href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
-              className="w-fit flex items-center justify-center gap-2 text-white bg-[#5865f2] py-4 px-8 rounded-full mt-10 text-[20px] hover:bg-[#7289da] hover:shadow-lg"
+              className="w-full md:w-fit flex items-center justify-center gap-2 text-white bg-[#5865f2] py-4 px-8 rounded-full mt-10 text-[20px] hover:bg-[#7289da] hover:shadow-lg"
             >
               <svg
                 width="24"
