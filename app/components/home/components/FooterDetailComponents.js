@@ -6,7 +6,7 @@ const FooterDetailComponents = () => {
   return (
     <>
       <div className="w-full bg-[#F6F6F6]">
-        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10">
+        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10 slide-in">
           <div className="flex flex-col">
             <div className="w-full max-w-[980px] mx-auto text-center">
               <h2 className="font-extrabold">
@@ -37,7 +37,7 @@ const FooterDetailComponents = () => {
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                class="icon-2tQ9Jt"
+                className="icon-2tQ9Jt"
               >
                 <g fill="currentColor">
                   <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>

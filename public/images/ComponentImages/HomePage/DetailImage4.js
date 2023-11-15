@@ -240,8 +240,8 @@ export const DetailImage4 = () => {
       <g filter="url(#filter1_d)">
         <circle cx="769" cy="414" r="24" fill="#E7366B" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M778.117 403.116L779.884 404.884L776.768 408L779.884 411.116L778.117 412.884L775 409.768L771.884 412.884L770.117 411.116L773.233 408L770.117 404.884L771.884 403.116L775 406.232L778.117 403.116ZM775 424H770C763.925 424 759 419.075 759 413V408C759 407.447 759.448 407 760 407H764C764.553 407 765 407.447 765 408V412C765 412.553 764.553 413 764 413H763C763.063 416.938 766 420 770 420V419C770 418.447 770.447 418 771 418H775C775.553 418 776 418.447 776 419V423C776 423.553 775.553 424 775 424Z"
           fill="white"
         />
@@ -656,8 +656,8 @@ export const DetailImage4 = () => {
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M53.4351 100.694C53.0922 100.559 52.6981 100.634 52.4359 100.884L48.5007 105.002H45.7507C45.2465 105.002 44.834 105.396 44.834 105.877V111.127C44.834 111.608 45.2465 112.002 45.7507 112.002H48.5007L52.4359 116.121C52.6981 116.372 53.0922 116.447 53.4351 116.311C53.7779 116.176 54.0007 115.856 54.0007 115.502V101.502C54.0007 101.149 53.7779 100.828 53.4351 100.694ZM55.834 102.377V104.127C58.3612 104.127 60.4173 106.09 60.4173 108.502C60.4173 110.914 58.3612 112.877 55.834 112.877V114.627C59.3723 114.627 62.2507 111.88 62.2507 108.502C62.2507 105.125 59.3723 102.377 55.834 102.377ZM55.834 105.877C57.3502 105.877 58.584 107.055 58.584 108.502C58.584 109.95 57.3502 111.127 55.834 111.127V109.377C56.3391 109.377 56.7507 108.984 56.7507 108.502C56.7507 108.02 56.3391 107.627 55.834 107.627V105.877Z"
         fill="#B9BBBE"
       />
@@ -668,8 +668,8 @@ export const DetailImage4 = () => {
       />
       <circle cx="318" cy="435" r="24" fill="#DBE7FF" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M308 428.5C308 427.397 308.897 426.5 310 426.5H326C327.103 426.5 328 427.397 328 428.5V439.5C328 440.604 327.103 441.5 326 441.5H319V443.5H323V445.5H313V443.5H317V441.5H310C308.897 441.5 308 440.604 308 439.5V428.5ZM319.2 438.338V435.6C315.864 435.6 313.668 436.662 312 439C312.672 435.662 314.532 432.337 319.2 431.662V429L324 433.663L319.2 438.338Z"
         fill="#1C1B29"
       />
@@ -692,8 +692,8 @@ export const DetailImage4 = () => {
       />
       <circle cx="432" cy="435" r="24" fill="#E7366B" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M441.117 424.116L442.884 425.884L439.768 429L442.884 432.116L441.117 433.884L438 430.768L434.884 433.884L433.117 432.116L436.233 429L433.117 425.884L434.884 424.116L438 427.232L441.117 424.116ZM438 445H433C426.925 445 422 440.075 422 434V429C422 428.447 422.448 428 423 428H427C427.553 428 428 428.447 428 429V433C428 433.553 427.553 434 427 434H426C426.063 437.938 429 441 433 441V440C433 439.447 433.447 439 434 439H438C438.553 439 439 439.447 439 440V444C439 444.553 438.553 445 438 445Z"
         fill="white"
       />
@@ -874,9 +874,9 @@ export const DetailImage4 = () => {
           width="80"
           height="80"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -907,9 +907,9 @@ export const DetailImage4 = () => {
           width="80"
           height="80"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
