@@ -6,7 +6,7 @@ const FooterDetailComponents = () => {
   return (
     <>
       <div className="w-full bg-[#F6F6F6]">
-        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10 slide-in">
+        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10">
           <div className="flex flex-col">
             <div className="w-full max-w-[980px] mx-auto text-center">
               <h2 className="font-extrabold">
@@ -31,13 +31,13 @@ const FooterDetailComponents = () => {
             </h4>
             <a
               href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
-              className="w-full md:w-fit flex items-center justify-center gap-2 text-white bg-[#5865f2] py-4 px-8 rounded-full mt-10 text-[20px] hover:bg-[#7289da] hover:shadow-lg"
+              className="w-fit flex items-center justify-center gap-2 text-white bg-[#5865f2] py-4 px-8 rounded-full mt-10 text-[20px] hover:bg-[#7289da] hover:shadow-lg"
             >
               <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
-                className="icon-2tQ9Jt"
+                class="icon-2tQ9Jt"
               >
                 <g fill="currentColor">
                   <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>

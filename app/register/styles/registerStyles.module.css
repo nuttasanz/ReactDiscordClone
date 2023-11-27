@@ -1,0 +1,39 @@
+.background_wrapper {
+  @apply relative overflow-hidden w-full h-full;
+  background-image: url("/images/ComponentImages/Register/RegisterBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background_img {
+  @apply h-screen;
+}
+
+.register_container {
+  @apply w-full h-screen flex items-center justify-center;
+}
+
+.form_wrapper {
+  @apply w-full sm:max-w-[480px] h-full sm:h-auto bg-[#313338] p-8 rounded-[5px];
+}
+
+.form {
+  @apply w-full h-screen sm:h-auto flex flex-col;
+}
+
+.form h1 {
+  @apply text-center text-white font-semibold text-[24px] leading-[30px] mb-5;
+}
+
+.form input {
+  @apply max-h-[40px] bg-[#1E1F22] p-[10px] rounded-[4px] mb-5 outline-none text-[#B5BAC1] text-[16px];
+}
+
+.form label {
+  @apply text-[#B5BAC1] text-[12px] mb-2 font-bold;
+}
+
+.form button {
+  @apply bg-[#5865F2] rounded-[4px] text-white mt-5 p-2;
+}

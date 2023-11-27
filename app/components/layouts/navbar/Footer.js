@@ -1,34 +1,92 @@
+"use client";
 import Link from "next/link";
 import { FooterRegisterButton } from "../../utils/Buttons/PrimaryButton";
 import "./styles/footerStyle.css";
+import { useState } from "react";
 
 const Footer = () => {
+  const [language, setLanguage] = useState("th");
+  const [languageBox, setLanguageBox] = useState(false);
   return (
     <>
       {/* DESKTOP RESPONSIVE */}
       <div className="w-full relative bottom-0 bg-[#23272A] pt-[80px] pb-[64px] px-6 md:px-10">
         <nav className="max-w-[1260px] mx-auto flex flex-col md:flex-row  justify-between">
           <div className="flex flex-col mb-[56px] md:mb-0">
-            <button className="my-6 flex items-center gap-2">
-              <img
-                src="/images/CountryImages/thTh.png"
-                className="max-w-[24] max-h-[16px]"
-              />
-              <p className="text-white">ไทย</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="#fff"
-                className="max-w-[15px] max-h-[10px]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                />
-              </svg>
+            <button
+              className="relative my-6 flex items-center gap-2"
+              onClick={() => setLanguageBox(!languageBox)}
+            >
+              {language === "th" ? (
+                <>
+                  <img
+                    src="/images/CountryImages/thTh.png"
+                    className="max-w-[24px] max-h-[16px]"
+                  />
+                  <p className="text-white">ไทย</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="#fff"
+                    className="max-w-[15px] max-h-[10px]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </>
+              ) : (
+                <>
+                  <img
+                    src="/images/CountryImages/enUS.png"
+                    className="max-w-[24px] max-h-[16px]"
+                  />
+                  <p className="text-white">English, USA</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="#fff"
+                    className="max-w-[15px] max-h-[10px]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </>
+              )}
+
+              {languageBox && (
+                <div className="absolute inset-x-0 bottom-[100%] bg-white max-w-[150px] rounded-md mb-2">
+                  <div
+                    className="flex items-center gap-2 p-2 hover:bg-gray-300 rounded"
+                    onClick={() => setLanguage("en")}
+                  >
+                    <img
+                      src="/images/CountryImages/enUS.png"
+                      className="max-w-[24px] max-h-[16px]"
+                    />
+                    <p className="text-black text-[14px]">English, USA</p>
+                  </div>
+                  <div
+                    className="flex items-center gap-2 p-2 hover:bg-gray-300 rounded"
+                    onClick={() => setLanguage("th")}
+                  >
+                    <img
+                      src="/images/CountryImages/thTh.png"
+                      className="max-w-[24px] max-h-[16px]"
+                    />
+                    <p className="text-black text-[14px]">ไทย</p>
+                  </div>
+                </div>
+              )}
             </button>
             <div className="flex gap-6 mt-6">
               <svg

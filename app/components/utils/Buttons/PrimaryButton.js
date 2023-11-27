@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const LoginButton = (props) => {
   return (
     <>
@@ -14,12 +16,13 @@ export const LoginButton = (props) => {
 export const FooterRegisterButton = (props) => {
   return (
     <>
-      <button
+      <Link
+        href={"/register"}
         type="submit"
         className="text-[14px] px-4 py-[7px] rounded-full text-white bg-[#5865f2] hover:bg-[#7289da] hover:shadow-lg"
       >
         ลงทะเบียน
-      </button>
+      </Link>
     </>
   );
 };
