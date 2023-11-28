@@ -3,12 +3,12 @@ import Link from "next/link";
 export const LoginButton = (props) => {
   return (
     <>
-      <button
-        type="submit"
+      <Link
+        href={"/login"}
         className="text-[14px] px-4 py-[7px] rounded-full bg-[#fff] hover:text-[#5865f2] hover:shadow-lg"
       >
         Login
-      </button>
+      </Link>
     </>
   );
 };

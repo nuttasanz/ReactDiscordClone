@@ -27,16 +27,32 @@
   @apply w-full h-screen sm:h-auto flex flex-col;
 }
 
-.form h1 {
-  @apply text-center text-white font-semibold text-[24px] leading-[30px] mb-5;
+.header h1 {
+  @apply text-center text-white font-semibold text-[24px] leading-[30px] mb-2;
+}
+
+.header p {
+  @apply text-center text-[#b5bac1] font-normal text-[16px] leading-[30px] mb-5;
+}
+
+.register {
+  @apply text-[14px] text-[#949ba4] mt-1;
+}
+
+.register a {
+  @apply text-[14px] text-[#00a8fc];
 }
 
 .form input {
   @apply max-h-[40px] bg-[#1E1F22] p-[10px] rounded-[4px] mb-5 outline-none text-[#B5BAC1] text-[16px];
 }
 
+.form input:last-of-type {
+  @apply max-h-[40px] bg-[#1E1F22] p-[10px] rounded-[4px] mb-0 outline-none text-[#B5BAC1] text-[16px];
+}
+
 .form a {
-  @apply text-[#00a8fc] text-[14px] mt-5;
+  @apply text-[#00a8fc] text-[14px] mt-1;
 }
 
 .checkbox_accept_offer {
