@@ -27,6 +27,12 @@ const FormRegister = () => {
         "http://localhost:3009/api/auth/register",
         form
       );
+      setForm({
+        email: "",
+        displayName: "",
+        userName: "",
+        password: "",
+      });
       console.log(response);
     } catch (error) {
       console.error("Error details:", error);
