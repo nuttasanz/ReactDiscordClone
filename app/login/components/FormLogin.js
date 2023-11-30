@@ -3,10 +3,13 @@ import { useState } from "react";
 import FormInput from "@/app/components/utils/Input/FormInput";
 import styles from "../styles/loginStyles.module.css";
 import Link from "next/link";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const FormLogin = () => {
+  const router = useRouter();
   const [form, setForm] = useState({
-    emailOrPhone: "",
+    email: "",
     password: "",
   });
   const handleChange = (e) => {
@@ -16,9 +19,23 @@ const FormLogin = () => {
       [name]: value,
     });
   };
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     console.log(form);
+    try {
+      const response = await axios.post(
+        "http://localhost:3009/api/auth/login",
+        form
+      );
+      setForm({
+        email: "",
+        password: "",
+      });
+      router.push("/");
+      console.log(response);
+    } catch (error) {
+      console.error("Error details:", error);
+    }
   };
   return (
     <div className={styles.register_container}>
@@ -50,9 +67,9 @@ const FormLogin = () => {
           </div>
           <FormInput
             title={"อีเมลหรือหมายเลขโทรศัพท์"}
-            type={"emailOrPhone"}
-            name={"emailOrPhone"}
-            value={form.emailOrPhone}
+            type={"email"}
+            name={"email"}
+            value={form.email}
             onChange={handleChange}
             required={true}
             autoComplete={"off"}

@@ -4,8 +4,10 @@ import FormInput from "@/app/components/utils/Input/FormInput";
 import styles from "../styles/registerStyles.module.css";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const FormRegister = () => {
+  const router = useRouter();
   const [form, setForm] = useState({
     email: "",
     displayName: "",
@@ -33,6 +35,7 @@ const FormRegister = () => {
         userName: "",
         password: "",
       });
+      router.push("/login")
       console.log(response);
     } catch (error) {
       console.error("Error details:", error);
