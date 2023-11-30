@@ -3,6 +3,7 @@ import { useState } from "react";
 import FormInput from "@/app/components/utils/Input/FormInput";
 import styles from "../styles/registerStyles.module.css";
 import Link from "next/link";
+import axios from "axios";
 
 const FormRegister = () => {
   const [form, setForm] = useState({
@@ -18,9 +19,18 @@ const FormRegister = () => {
       [name]: value,
     });
   };
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     console.log(form);
+    try {
+      const response = await axios.post(
+        "http://localhost:3009/api/auth/register",
+        form
+      );
+      console.log(response);
+    } catch (error) {
+      console.error("Error details:", error);
+    }
   };
   return (
     <div className={styles.register_container}>
