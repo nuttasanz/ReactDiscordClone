@@ -1,14 +1,17 @@
+"use client";
 import Link from "next/link";
 import { LoginButton } from "../../utils/Buttons/PrimaryButton";
+import { useState } from "react";
+import HeaderMobileMenu from "./components/Header/HeaderMobileMenu";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       {/* DESKTOP RESPONSIVE */}
       <div className="w-full max-w-[1260px] mx-auto relative top-0 px-10 hidden lg:block">
         <nav className="h-[80px] flex justify-between items-center">
           <Link href={"/"}>
-            {" "}
             <svg
               width="124"
               height="34"
@@ -65,7 +68,6 @@ const Header = () => {
       <div className="w-full max-w-[1260px] mx-auto relative top-0 px-6 md:px-10 block lg:hidden">
         <nav className="h-[80px] flex justify-between items-center">
           <Link href={"/"}>
-            {" "}
             <svg
               width="124"
               height="34"
@@ -85,46 +87,22 @@ const Header = () => {
               </g>
             </svg>
           </Link>
-          {/* <div className="flex gap-5 text-[16px] font-semibold text-white">
-            <Link href={"/download"} className="p-[10px] hover:underline">
-              Download
-            </Link>
-            <Link href={"/nitro"} className="p-[10px] hover:underline">
-              Nitro
-            </Link>
-            <Link href={"/servers"} className="p-[10px] hover:underline">
-              Discover
-            </Link>
-            <Link href={"/safetycenter"} className="p-[10px] hover:underline">
-              Safety
-            </Link>
-            <a
-              href={"https://support.discord.com/hc/en-us"}
-              target="_blank"
-              className="p-[10px] hover:underline"
-            >
-              Support
-            </a>
-            <Link href={"/blog"} className="p-[10px] hover:underline">
-              Blog
-            </Link>
-            <Link href={"/jobs"} className="p-[10px] hover:underline">
-              Careers
-            </Link>
-          </div> */}
           <div className="flex gap-4">
             <LoginButton />
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <path
-                fill="#ffffff"
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M33.3327 10H6.66602V15H33.3327V10ZM6.66602 18.3317H33.3327V23.3317H6.66602V18.3317ZM6.66602 26.665H33.3327V31.665H6.66602V26.665Z"
-              ></path>
-            </svg>
+            <div onClick={() => setOpenMenu(!openMenu)}>
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <path
+                  fill="#ffffff"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M33.3327 10H6.66602V15H33.3327V10ZM6.66602 18.3317H33.3327V23.3317H6.66602V18.3317ZM6.66602 26.665H33.3327V31.665H6.66602V26.665Z"
+                ></path>
+              </svg>
+            </div>
           </div>
         </nav>
       </div>
+      {openMenu && <HeaderMobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />}
       {/* END MOBILE RESPONSIVE */}
     </>
   );

@@ -28,7 +28,7 @@ const DetailComponents = (props) => {
   
     const observer = new IntersectionObserver(cb, appearOption);
   
-    // Observe each element with the class "slide-in"
+    // Observe each element with the className "slide-in"
     appear.forEach((element) => {
       observer.observe(element);
     });
