@@ -25,7 +25,16 @@ const FormLogin = () => {
     try {
       const response = await axios.post(
         "http://localhost:3009/api/auth/login",
-        form
+        form,
+        {
+          auth: {
+            email: form.email,
+            password: form.password,
+          },
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
       );
       setForm({
         email: "",
