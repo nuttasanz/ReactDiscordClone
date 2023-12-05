@@ -1,5 +1,3 @@
-"use server"
-
 export const DetailImage4 = () => {
   return (
     <svg

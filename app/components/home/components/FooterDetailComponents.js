@@ -1,12 +1,18 @@
+"use client";
+import { setUpAnimation } from "@/libs/setUpAnimation";
 import "../styles/homePage.css";
 import { DetailImage4 } from "@/public/images/ComponentImages/HomePage/DetailImage4";
 import { Sparkles } from "@/public/images/ComponentImages/HomePage/Sparkles";
+import { useEffect } from "react";
 
 const FooterDetailComponents = () => {
+  useEffect(() => {
+    setUpAnimation();
+  }, []);
   return (
     <>
-      <div className="w-full bg-[#F6F6F6]">
-        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10">
+      <div className="w-full bg-[#F6F6F6] ">
+        <div className="max-w-[1260px] mx-auto pt-[120px] pb-20 px-10 slide-in">
           <div className="flex flex-col">
             <div className="w-full max-w-[980px] mx-auto text-center">
               <h2 className="font-extrabold">
