@@ -35,7 +35,7 @@ const FormRegister = () => {
         userName: "",
         password: "",
       });
-      router.push("/login")
+      router.push("/login");
       console.log(response);
     } catch (error) {
       console.error("Error details:", error);
