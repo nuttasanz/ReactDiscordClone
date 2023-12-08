@@ -25,23 +25,14 @@ const FormLogin = () => {
     try {
       const response = await axios.post(
         "http://localhost:3009/api/auth/login",
-        form,
-        {
-          auth: {
-            email: form.email,
-            password: form.password,
-          },
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        form
       );
       setForm({
         email: "",
         password: "",
       });
-      router.push("/");
-      console.log(response);
+      localStorage.setItem("token", response.data.token);
+      router.push("/user");
     } catch (error) {
       console.error("Error details:", error);
     }
