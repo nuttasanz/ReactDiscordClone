@@ -10,7 +10,7 @@ const Header = () => {
     <>
       {/* DESKTOP RESPONSIVE */}
       {/* <div className="w-full max-w-[1260px] mx-auto relative top-0 px-10 hidden lg:block"> */}
-        <nav className="w-full max-w-[1260px] h-[80px] mx-auto absolute inset-0 flex justify-between items-center">
+        <nav className="w-full max-w-[1260px] h-[80px] mx-auto absolute inset-0 z-50 flex justify-between items-center">
           <Link href={"/"}>
             <svg
               width="124"
