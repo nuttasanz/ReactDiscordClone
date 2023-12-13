@@ -20,7 +20,7 @@ const IntroduceComponent = () => {
           className="absolute bottom-0 right-[-160px] hidden md:block lg:block"
         />
       </div>
-      <div className="absolute z-10 inset-0 w-full max-w-[1260px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[120px] mx-auto">
+      <div className="absolute z-10 inset-0 w-full max-w-[1260px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[200px] mx-auto">
         <div className="w-full max-w-[780px] mx-auto text-left lg:text-center text-white">
           <h1 className="md:text-[56px] font-extrabold">
             โลกที่เป็นดั่งใจนึก...

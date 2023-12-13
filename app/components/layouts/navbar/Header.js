@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <>
       {/* DESKTOP RESPONSIVE */}
-      <div className="w-full max-w-[1260px] mx-auto relative top-0 px-10 hidden lg:block">
-        <nav className="h-[80px] flex justify-between items-center">
+      {/* <div className="w-full max-w-[1260px] mx-auto relative top-0 px-10 hidden lg:block"> */}
+        <nav className="w-full max-w-[1260px] h-[80px] mx-auto absolute inset-0 flex justify-between items-center">
           <Link href={"/"}>
             <svg
               width="124"
@@ -62,7 +62,7 @@ const Header = () => {
             <LoginButton />
           </div>
         </nav>
-      </div>
+      {/* </div> */}
       {/* END DESKTOP RESPONSIVE */}
       {/* MOBILE RESPONSIVE */}
       <div className="w-full max-w-[1260px] mx-auto relative top-0 px-6 md:px-10 block lg:hidden">
