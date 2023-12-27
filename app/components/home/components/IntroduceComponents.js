@@ -1,26 +1,32 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../styles/homePage.css";
+import IndexHeroBanner from "../../utils/svg/IndexHeroBanner";
 
 const IntroduceComponent = () => {
   const [isCheck, setIsCheck] = useState(false);
   return (
-    <div className="relative h-[780px] md:h-[626px] overflow-x-hidden">
-      <div className="w-full h-full">
-        <img
-          src="/images/ComponentImages/HomePage/Banner.png"
-          className="w-full h-full object-cover hidden md:block"
-        />
-        <img
-          src="/images/ComponentImages/HomePage/LeftBanner.png"
-          className="absolute bottom-0 left-0 md:left-[-200px] sm:block md:hidden lg:block"
-        />
-        <img
-          src="/images/ComponentImages/HomePage/RightBanner.png"
-          className="absolute bottom-0 right-[-160px] hidden md:block lg:block"
-        />
-      </div>
-      <div className="absolute z-10 inset-0 w-full max-w-[1260px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[200px] mx-auto">
+    // <div className="relative h-[780px] md:h-[626px] overflow-x-hidden">
+    //   <div className="w-full h-full">
+    //     <img
+    //       src="/images/ComponentImages/HomePage/Banner.png"
+    //       className="w-full h-full object-cover hidden md:block"
+    //     />
+    //     <img
+    //       src="/images/ComponentImages/HomePage/LeftBanner.png"
+    //       className="absolute bottom-0 left-0 md:left-[-200px] sm:block md:hidden lg:block"
+    //     />
+    //     <img
+    //       src="/images/ComponentImages/HomePage/RightBanner.png"
+    //       className="absolute bottom-0 right-[-160px] hidden md:block lg:block"
+    //     />
+    //   </div>
+
+    <div className="overflow-hidden">
+      {/* <div>
+        <IndexHeroBanner />
+      </div> */}
+      <div className="relative z-10 inset-0 w-full max-w-[1260px] max-h-[626px] px-6 py-[56px] md:px-10 md:py-20 lg:py-[200px]  mx-auto">
         <div className="w-full max-w-[780px] mx-auto text-left lg:text-center text-white">
           <h1 className="md:text-[56px] font-extrabold">
             โลกที่เป็นดั่งใจนึก...
@@ -99,6 +105,7 @@ const IntroduceComponent = () => {
         )}
       </div>
     </div>
+    // </div>
   );
 };
 
